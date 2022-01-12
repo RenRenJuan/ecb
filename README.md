@@ -1,13 +1,10 @@
-# [MCP shcl fork](https://eg.meansofproduction.biz/eg/index.php/MCP-CMS)
-<span style="font-size: 12px">Divergence from original devloper's pkg</span>
+# Emacs Code Browser
+<span style="font-size: 12px">Divergence from original developer's pkg</span>
 
->  The first point of divergence is that the original pkg is oriented toward generic posix shell and this line supports the mcpcms variant of zsh. 
+> Only forked to get it working.
 
-Ultimately I expect this code to evolve into WFL. Something drastic will be done early on to get closer to my original intent of a synthesis of 
-cl and (an actual) shell (e.g. mcpcms) vs the source pkg which is more of a posix shell emulation in lisp that can exec.
-
-## 1.0.0
+## 2.5.1
    
-  Appropriate actions from README.org performed automatically by the mcpcms automation.
+  Assess worth of doing and state of other forks, begin corrections.
 
 
