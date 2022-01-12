@@ -1,5 +1,5 @@
 # Emacs Code Browser
-<span style="font-size: 12px">Divergence from original developer's pkg</span>
+<span style="font-size: 12px">Divergence from upstream pkg</span>
 
 > Only forked to get it working.
 
