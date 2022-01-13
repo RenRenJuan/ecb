@@ -1,10 +1,22 @@
 # Emacs Code Browser
 
-## 2.50.2
+## Assessment
 
-> Fix conditions preventing (require 'ecb) from running without warnings or error.
-> modules affected: tree-buffer.el, ecb-navigate.el, ecb-layout.el, ecb-util.el
-> currently requiring the now included pkgs before ecb
+> Now understand that ECB is thoroughly bitrotted at least wrt GNU Emacs 26.1.
+> This is compounded by migration of the depdendencies and a loose concept in
+> the first place.
+
+> I don't want to do anything more than make the original concept work in 
+> the current target and expect to comment out a lot of stuff like the Xemacs
+> support where warranted.
+
+> A common and compounded anti-parttern, the original never reached a level
+> of quality that would merit its upkeep and then the attempt to update didn
+> do anything more than deal with the cedit et. al. migration into the main
+> app.
+
+> Undecided how I will proceed but will leave this fork in any case. Presume
+> I will use unless an ensemble of current things works better.
 
 ## 2.50.1
 <span style="font-size: 12px">Divergence from upstream pkg</span>
