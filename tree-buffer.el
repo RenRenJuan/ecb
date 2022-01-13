@@ -48,20 +48,20 @@
   (require 'cl))
 
 ;; XEmacs stuff
-(silentcomp-defun button-release-event-p)
-(silentcomp-defun button-press-event-p)
-(silentcomp-defun event-key)
-(silentcomp-defun extent-end-position)
-(silentcomp-defun event-glyph-extent)
-(silentcomp-defun event-over-glyph-p)
-(silentcomp-defun display-message)
-(silentcomp-defun clear-message)
-(silentcomp-defun locate-data-directory)
-(silentcomp-defun make-image-specifier)
-(silentcomp-defun make-glyph)
-(silentcomp-defun popup-menu-and-execute-in-window)
-(silentcomp-defun valid-image-instantiator-format-p)
-(silentcomp-defvar modeline-map)
+;(silentcomp-defun button-release-event-p)
+;(silentcomp-defun button-press-event-p)
+;(silentcomp-defun event-key)
+;(silentcomp-defun extent-end-position)
+;(silentcomp-defun event-glyph-extent)
+;(silentcomp-defun event-over-glyph-p)
+;(silentcomp-defun display-message)
+;(silentcomp-defun clear-message)
+;(silentcomp-defun locate-data-directory)
+;(silentcomp-defun make-image-specifier)
+;(silentcomp-defun make-glyph)
+;(silentcomp-defun popup-menu-and-execute-in-window)
+;(silentcomp-defun valid-image-instantiator-format-p)
+;(silentcomp-defvar modeline-map)
 ;; Emacs
 (silentcomp-defvar header-line-format)
 (silentcomp-defvar message-log-max)
@@ -80,8 +80,8 @@
 (silentcomp-defun font-lock-add-keywords)
 (silentcomp-defvar cursor-in-non-selected-windows)
 ;; timer stuff for XEmacs
-(silentcomp-defun delete-itimer)
-(silentcomp-defun start-itimer)
+;'(silentcomp-defun delete-itimer)
+;(silentcomp-defun start-itimer)
 
 (defconst tree-buffer-running-xemacs (featurep 'xemacs))
 
@@ -89,38 +89,38 @@
 
 (if tree-buffer-running-xemacs
     ;; XEmacs
-    (progn
-      (defun tree-buffer-facep (face)
-        (memq face (face-list)))
-      (defalias 'tree-buffer-line-beginning-pos 'point-at-bol)
-      (defalias 'tree-buffer-line-end-pos 'point-at-eol)
-      (defun tree-buffer-frame-char-width (&optional frame)
-        (/ (frame-pixel-width frame) (frame-width frame)))
-      (defalias 'tree-buffer-window-display-height 'window-displayed-height)
-      (defun tree-buffer-event-to-key (event)
-        (typecase event
-          (button-release-event 'mouse-release)
-          (button-press-event 'mouse-press)
-          (otherwise
-           ;; the ignore-errors is a little hack because i don't know all
-           ;; events of XEmacs so sometimes event-key produces a
-           ;; wrong-type-argument error.
-           (ignore-errors (event-key event)))))
-      (defalias 'tree-buffer-event-window 'event-window)
-      (defun tree-buffer-event-buffer (event)
-        (window-buffer (tree-buffer-event-window event)))
-      (defalias 'tree-buffer-event-point 'event-point)
-      ;; stolen from dframe.el of the speedbar-library.
-      (defun tree-buffer-mouse-set-point (e)
-        "Set POINT based on event E. Handles clicking on images in XEmacs."
-        (mouse-set-point e)
-        (if (and (fboundp 'event-over-glyph-p) (event-over-glyph-p e))
-            ;; We are in XEmacs, and clicked on a picture
-            (let ((ext (event-glyph-extent e)))
+;    (progn
+;      (defun tree-buffer-facep (face)
+;        (memq face (face-list)))
+;      (defalias 'tree-buffer-line-beginning-pos 'point-at-bol)
+;      (defalias 'tree-buffer-line-end-pos 'point-at-eol)
+;      (defun tree-buffer-frame-char-width (&optional frame)
+;        (/ (frame-pixel-width frame) (frame-width frame)))
+;      (defalias 'tree-buffer-window-display-height 'window-displayed-height)
+;      (defun tree-buffer-event-to-key (event)
+;        (typecase event
+;          (button-release-event 'mouse-release)
+;          (button-press-event 'mouse-press)
+;          (otherwise
+;           ;; the ignore-errors is a little hack because i don't know all
+;           ;; events of XEmacs so sometimes event-key produces a
+;           ;; wrong-type-argument error.
+;           (ignore-errors (event-key event)))))
+;      (defalias 'tree-buffer-event-window 'event-window)
+;      (defun tree-buffer-event-buffer (event)
+;        (window-buffer (tree-buffer-event-window event)))
+;      (defalias 'tree-buffer-event-point 'event-point)
+;      ;; stolen from dframe.el of the speedbar-library.
+;      (defun tree-buffer-mouse-set-point (e)
+;        "Set POINT based on event E. Handles clicking on images in XEmacs."
+;        (mouse-set-point e)
+;        (if (and (fboundp 'event-over-glyph-p) (event-over-glyph-p e))
+;            ;; We are in XEmacs, and clicked on a picture
+;            (let ((ext (event-glyph-extent e)))
               ;; This position is back inside the extent where the
               ;; junk we pushed into the property list lives.
-              (if (extent-end-position ext)
-                  (goto-char (1- (extent-end-position ext))))))))
+;              (if (extent-end-position ext)
+;                  (goto-char (1- (extent-end-position ext))))))))
 
   ;; GNU Emacs
   (defalias 'tree-buffer-facep 'facep)
