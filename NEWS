@@ -406,7 +406,7 @@
 ** ECB is able to work with indirect buffers if the base-buffer is filebased
 
    Now you can work with indirect-buffers as well as with normal file-buffers,
-   i.e. indirect buffers are shown in the historyÅ¥, their contents are
+   i.e. indirect buffers are shown in the historyÔøΩÔøΩ, their contents are
    displayed in the methods-buffer, the ECB-analyse-buffer works with them,
    autom. synchronizing the ECB-tree-buffers works for them etc...
 
@@ -677,7 +677,7 @@
     is needed. Latest CVS Emacs contains this VC-version. The new function
     `ecb-vc-dir-managed-by-SVN' is now added to the default-value of
     `ecb-vc-supported-backends'. Thanks for first implementation to Ekkehard
-    GÅˆrlach <ekkehard.goerlach@pharma.novartis.com>.
+    GÔøΩÔøΩrlach <ekkehard.goerlach@pharma.novartis.com>.
 
 ** Fixed bugs
 
@@ -2158,7 +2158,7 @@
 *** Fixed a small bug in `ecb-add-all-buffers-to-history': If
     `ecb-sort-history-items' is nil then now the most recently used buffers are
     added to the top of the history, the seldom used buffers at the bottom.
-    Thanks to Stefan ReichÅˆr <xsteve@riic.at>! (Klaus).
+    Thanks to Stefan ReichÔøΩÔøΩr <xsteve@riic.at>! (Klaus).
 
 *** Fixed some bugs concerning the eshell-integration (Klaus):
 
@@ -2538,7 +2538,7 @@
    for a description. (Klaus)
 
 ** Now the option 'ecb-post-process-semantic-tokenlist' has per default an
-   entry for emacs-lisp-mode, so for eieio-code the methods (defmethod) of a
+   entry for emacs-lisp-mode, so for eieio-code the methods (cl-defmethod) of a
    class are grouped with respect to the class they belong. The new default
    value of this option does this for c++- and eieio-code. (Klaus)
 
@@ -2631,7 +2631,7 @@
 ** New hook ecb-current-buffer-sync-hook allows developers to add code to be
    evaluated after the ECB is synchronized with the current buffer.
 
-** Now all faces used by ECB for highlighting and displaying itÅ¥s own stuff are
+** Now all faces used by ECB for highlighting and displaying itÔøΩÔøΩs own stuff are
    customizable. See new group 'ecb-faces' (Klaus).
 
 ** ECB is now fully prepared for Emacs 21. The new feature
@@ -2805,11 +2805,11 @@
     (XEmacs) and 'temp-buffer-resize-mode' (GNU Emacs) are now fully supported
     by ECB if no durable compilation-window is shown.
 
-** New function to toggle visibility of the ECB windows. Now itÅ¥s possible to
+** New function to toggle visibility of the ECB windows. Now itÔøΩÔøΩs possible to
    hide all ECB windows without deactivating ECB (see 'ecb-toggle-ecb-windows')
    (Klaus).
 
-** ECB is now a global minor mode with itÅ¥s own menu "ECB" and itÅ¥s own key-map
+** ECB is now a global minor mode with itÔøΩÔøΩs own menu "ECB" and itÔøΩÔøΩs own key-map
    with prefix "C-c .". New function to (de)activate/toggle ECB with
    'ecb-minor-mode'. (Klaus)
 
@@ -2944,9 +2944,9 @@
 * Changes for ECB version 1.20
 
 ** Now the ECB-buffers are intelligent in displaying nodes (Klaus):
-   + Expandable nodes: (e.g. a directory with itÅ¥s subdirectories). An
+   + Expandable nodes: (e.g. a directory with itÔøΩÔøΩs subdirectories). An
      ECB-tree-window now tries always to make visible as much as possible of
-     the sub-nodes of a node if a node is expanded (e.g. by clicking onto itÅ¥s
+     the sub-nodes of a node if a node is expanded (e.g. by clicking onto itÔøΩÔøΩs
      expand-symbol).
    + Other nodes: A ECB-tree-window is always best filled, means no empty lines
      if there are enough lines to fill the whole window.
