@@ -3,8 +3,8 @@
 
 ## 2.50.2
 
-> Loads via require without error or warning from this level of sources
-> but there is warning not directly referencing ecb, nature TBD.
+> Loads via require without error or warning from this level of sources.
+> 1 warning not directly referencing ecb, ignoring for now.
 
 ## Assessment
 
