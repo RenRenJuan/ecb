@@ -12,8 +12,9 @@
 > Loads via require without error or warning from this level of sources.
 > 1 warning not directly referencing ecb, ignoring for now.
 
-> Currently all windows are working but have to toggle bounce display of the 
-> ECB to get them all to show.
+> Currently all windows are showing but have to toggle bounce display of the 
+> ECB to get them to do so. Looks like may have to fork the whole EDE/CEDIT
+> stack, at least to get the documentation back online.
 
 ## Assessment
 
