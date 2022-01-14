@@ -1,6 +1,13 @@
 # Emacs Code Browser
 
 
+## 2.50.3
+
+> Goal for this tag is to be able to load a layout like that shown
+> in the sourceforge screenshot for 2.40 and 23.1 against the 
+> ecb project.
+
+
 ## 2.50.2
 
 > Loads via require without error or warning from this level of sources.
