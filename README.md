@@ -12,6 +12,9 @@
 > Loads via require without error or warning from this level of sources.
 > 1 warning not directly referencing ecb, ignoring for now.
 
+> Currently all windows are working but have to toggle bounce display of the 
+> ECB to get them all to show.
+
 ## Assessment
 
 > Now understand that ECB is thoroughly bitrotted at least wrt GNU Emacs 26.1.
