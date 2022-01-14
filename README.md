@@ -1,5 +1,11 @@
 # Emacs Code Browser
 
+
+## 2.50.2
+
+> Loads via require without error or warning from this level of sources
+> but there is warning not directly referencing ecb, nature TBD.
+
 ## Assessment
 
 > Now understand that ECB is thoroughly bitrotted at least wrt GNU Emacs 26.1.
