@@ -4,7 +4,7 @@
 ## 2.50.3
 
 > Goal for this tag is to be able to load a layout like that shown
-> [here](https://ecb.sourceforge.net/screenshots/index.html) for 2.40 and 23.1 against this fork.
+> [here](http://ecb.sourceforge.net/screenshots/index.html) for 2.40 and 23.1 against this fork.
 
 
 ## 2.50.2
