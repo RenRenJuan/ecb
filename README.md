@@ -13,7 +13,7 @@
 > 1 warning not directly referencing ecb, ignoring for now.
 
 > Currently all windows are showing but have to toggle bounce display of the 
-> ECB to get them to do so. Looks like may have to fork the whole EDE/CEDIT
+> ECB to get them to do so. Looks like may have to fork the whole EDE/CEDET
 > stack, at least to get the documentation back online.
 
 ## Assessment
